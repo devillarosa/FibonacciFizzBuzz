@@ -16,8 +16,11 @@ FizzBuzz::FizzBuzz(int pi_number) :
         
         l_number = m_doFibonacci(i);
         
+        //FizzBuzz when F(n) is divisible by 3
+        if (l_number % 15 == 0)
+            m_sequence += "FizzBuzz";
         //Buzz when F(n) is divisible by 3
-        if (l_number % 3 == 0)
+        else if (l_number % 3 == 0)
             m_sequence += "Buzz";
         //Fizz when F(n) is divisible by 5
         else if (l_number % 5 == 0)
