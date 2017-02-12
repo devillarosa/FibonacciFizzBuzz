@@ -11,6 +11,7 @@ class FizzBuzz
     
     private:
     int m_doFibonacci(int pi_number);
+    bool m_isPrime(int pi_number);
     std::string m_sequence; // contains FizzBuzz Sequence output
     int m_number; // contains n of F(n) in Fibonacci
 };

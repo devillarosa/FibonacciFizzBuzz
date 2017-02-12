@@ -16,6 +16,7 @@ FizzBuzz::FizzBuzz(int pi_number) :
         
         l_number = m_doFibonacci(i);
         
+        
         //FizzBuzz when F(n) is divisible by 3
         if (l_number % 15 == 0)
             m_sequence += "FizzBuzz";
@@ -25,6 +26,9 @@ FizzBuzz::FizzBuzz(int pi_number) :
         //Fizz when F(n) is divisible by 5
         else if (l_number % 5 == 0)
             m_sequence += "Fizz";
+        //BuzzFizz when F(n) is divisible by 3
+        else if (m_isPrime(l_number))
+            m_sequence += "BuzzFizz";
         else
             m_sequence += std::to_string(l_number);
         m_sequence += " ";
@@ -62,3 +66,15 @@ int FizzBuzz::m_doFibonacci(int pi_number)
 }
 
 
+bool FizzBuzz::m_isPrime(int pi_number)
+{
+    for(int i = 2; i <= pi_number / 2; i++)
+    {
+        if (0 == pi_number % i)
+        {
+            return false;
+        }
+    }
+
+    return true;
+}
