@@ -18,9 +18,13 @@ FizzBuzz::FizzBuzz(int pi_number) :
         
         //Buzz when F(n) is divisible by 3
         if (l_number % 3 == 0)
-            m_sequence += "Buzz ";
+            m_sequence += "Buzz";
+        //Buzz when F(n) is divisible by 5
+        else if (l_number % 5 == 0)
+            m_sequence += "Fizz";
         else
-            m_sequence += std::to_string(l_number) + " ";
+            m_sequence += std::to_string(l_number);
+        m_sequence += " ";
     }
     
     //Remove last index that contains " "
