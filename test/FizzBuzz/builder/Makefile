@@ -17,7 +17,7 @@ SOURCE_FILES := $(SOURCE_DIR)/FizzBuzz.cpp
 $(info $$SOURCE_FILES is [${SOURCE_FILES}])
 
 TEST_FILES := $(SOURCE_DIR)/test_runner.cpp \
-	$(SOURCE_DIR)/buzz_test.cpp \
+	$(SOURCE_DIR)/test_case.cpp \
 
 SOURCE_OBJ_DIR := $(TOP_DIR)/bin/obj
 SOURCE_OBJ_FILES := $(addprefix $(SOURCE_OBJ_DIR)/,$(notdir $(SOURCE_FILES:.cpp=.o)))
