@@ -16,6 +16,8 @@ int main()
      suite_add_tcase(s, tc_buzz); // Add Test Cases to Buzz Test Case
      tcase_add_test(tc_buzz, Buzz_n_equals_3_test);
      tcase_add_test(tc_buzz, Buzz_n_equals_4_test);
+     tcase_add_test(tc_buzz, Buzz_n_equals_5_test);
+     tcase_add_test(tc_buzz, Buzz_n_equals_6_test);
     
      
      
