@@ -1,1 +1,1 @@
-# FibonacciFizzBuzz
+# FibonacciFizzBuzzAuthor: Devin VillarosaThis repository reflects the test driven development of writing a class called FizzBuzzAssumptions: Check Framework is installed in the systemTo Build:cd ROOD_TIR/test/FizzBuzz/buildermakeTo Run:cd ROOT_DIR/test/FizzBuzz/bin./runTestRunnerAcknowledgments:Checking if a number is prime: https://www.programiz.com/cpp-programming/examples/prime-number
