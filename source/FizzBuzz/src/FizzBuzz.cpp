@@ -19,7 +19,7 @@ FizzBuzz::FizzBuzz(int pi_number) :
         //Buzz when F(n) is divisible by 3
         if (l_number % 3 == 0)
             m_sequence += "Buzz";
-        //Buzz when F(n) is divisible by 5
+        //Fizz when F(n) is divisible by 5
         else if (l_number % 5 == 0)
             m_sequence += "Fizz";
         else

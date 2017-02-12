@@ -18,6 +18,7 @@ int main()
      tcase_add_test(tc, n_equals_4_test);
      tcase_add_test(tc, n_equals_5_test);
      tcase_add_test(tc, n_equals_6_test);
+     tcase_add_test(tc, n_equals_20_test);
     
      
      

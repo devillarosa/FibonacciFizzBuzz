@@ -37,3 +37,13 @@ START_TEST(n_equals_6_test)
 
 }
 END_TEST
+
+// @pass print divisible of 3 for Fibbonaci sequence n = 7 (1 1 2 3 5 8 13 21 34 55 89 144 233 377 610 987 1597 2584 4181 6765)
+START_TEST(n_equals_20_test)
+{
+   FizzBuzz l_FizzBuzz(20);
+   ck_assert_str_eq(l_FizzBuzz.getSequence().c_str(), "1 1 2 Buzz Fizz 8 13 Buzz 34 Fizz 89 Buzz 233 377 Fizz Buzz 1597 2584 4181 FizzBuzz"); 
+
+}
+END_TEST
+
