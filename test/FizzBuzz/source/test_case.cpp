@@ -6,7 +6,7 @@
 START_TEST(n_equals_3_test)
 {
    FizzBuzz l_FizzBuzz(3);
-   ck_assert_str_eq(l_FizzBuzz.getSequence().c_str(), "1 1 2"); 
+   ck_assert_str_eq(l_FizzBuzz.getSequence().c_str(), "BuzzFizz BuzzFizz BuzzFizz"); 
     
 }
 END_TEST
@@ -15,7 +15,7 @@ END_TEST
 START_TEST(n_equals_4_test)
 {
    FizzBuzz l_FizzBuzz(4);
-   ck_assert_str_eq(l_FizzBuzz.getSequence().c_str(), "1 1 2 Buzz"); 
+   ck_assert_str_eq(l_FizzBuzz.getSequence().c_str(), "BuzzFizz BuzzFizz BuzzFizz Buzz"); 
 
 }
 END_TEST
@@ -24,7 +24,7 @@ END_TEST
 START_TEST(n_equals_5_test)
 {
    FizzBuzz l_FizzBuzz(5);
-   ck_assert_str_eq(l_FizzBuzz.getSequence().c_str(), "1 1 2 Buzz Fizz"); 
+   ck_assert_str_eq(l_FizzBuzz.getSequence().c_str(), "BuzzFizz BuzzFizz BuzzFizz Buzz Fizz"); 
 
 }
 END_TEST
@@ -33,7 +33,7 @@ END_TEST
 START_TEST(n_equals_6_test)
 {
    FizzBuzz l_FizzBuzz(6);
-   ck_assert_str_eq(l_FizzBuzz.getSequence().c_str(), "1 1 2 Buzz Fizz 8"); 
+   ck_assert_str_eq(l_FizzBuzz.getSequence().c_str(), "BuzzFizz BuzzFizz BuzzFizz Buzz Fizz 8"); 
 
 }
 END_TEST
@@ -42,7 +42,7 @@ END_TEST
 START_TEST(n_equals_20_test)
 {
    FizzBuzz l_FizzBuzz(20);
-   ck_assert_str_eq(l_FizzBuzz.getSequence().c_str(), "1 1 2 Buzz Fizz 8 13 Buzz 34 Fizz 89 Buzz 233 377 Fizz Buzz 1597 2584 4181 FizzBuzz"); 
+   ck_assert_str_eq(l_FizzBuzz.getSequence().c_str(), "BuzzFizz BuzzFizz BuzzFizz Buzz Fizz 8 BuzzFizz Buzz 34 Fizz BuzzFizz Buzz BuzzFizz 377 Fizz Buzz BuzzFizz 2584 4181 FizzBuzz"); 
 
 }
 END_TEST
